@@ -7,8 +7,11 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	ambience = AMBIENCE_ENGINEERING
 
+/area/ship/Sol_Frigate/hallwayport
+	name = "Solarian Frigate - Port Hallway"
+
 /area/ship/Sol_Frigate/hallway
-	name = "Solarian Frigate - Hallway"
+	name = "Solarian Frigate - Starboard Hallway"
 
 /area/ship/Sol_Frigate/cic
 	name = "Solarian Frigate - CIC"
@@ -16,14 +19,14 @@
 /area/ship/Sol_Frigate/telecomms
 	name = "Solarian Frigate - Telecommunications"
 
-/area/ship/Sol_Frigate/docking_port
-	name = "Solarian Frigate - Docking Port"
+/area/ship/Sol_Frigate/Port_docking_port
+	name = "Solarian Frigate - Port Docking Port"
+
+/area/ship/Sol_Frigate/Starboard_docking_port
+	name = "Solarian Frigate - Starboard Docking Port"
 
 /area/ship/Sol_Frigate/starboard_thrusters
 	name = "Solarian Frigate - Starboard Thrusters"
-
-/area/ship/Sol_Frigate/atmospherics
-	name = "Solarian Frigate - Atmospherics"
 
 /area/ship/Sol_Frigate/port_thrusters
 	name = "Solarian Frigate - Port Thrusters"
@@ -31,14 +34,20 @@
 /area/ship/Sol_Frigate/engineering
 	name = "Solarian Frigate - Engineering"
 
-/area/ship/Sol_Frigate/synthroom
-	name = "Solarian Frigate - Utilities Closet"
+/area/ship/Sol_Frigate/ocountry
+	name = "Solarian Frigate - Officer's Country"
+
+/area/ship/Sol_Frigate/oquarters
+	name = "Solarian Frigate - Officer's Stateroom"
+
+/area/ship/Sol_Frigate/oquartershead
+	name = "Solarian Frigate - Officer's Stateroom Head"
 
 /area/ship/Sol_Frigate/bunks
 	name = "Solarian Frigate - Crew Bunks"
 
-/area/ship/Sol_Frigate/eva_preperation
-	name = "Solarian Frigate - EVA Preperation"
+/area/ship/Sol_Frigate/eva_storage
+	name = "Solarian Frigate - EVA Storage"
 
 /area/ship/Sol_Frigate/armoury
 	name = "Solarian Frigate - Armoury"
@@ -59,7 +68,7 @@
 	name = "Solarian Frigate - Port Gunnery"
 
 /area/ship/Sol_Frigate/crew_lounge
-	name = "Solarian Frigate - Crew Lounge"
+	name = "Solarian Frigate - Hydroponics"
 
 /area/ship/Sol_Frigate/head
 	name = "Solarian Frigate - Head"
@@ -74,7 +83,7 @@
 	name = "Solarian Frigate - Captain's Cabin"
 
 /area/ship/Sol_Frigate/cpo_cabin
-	name = "Solarian Frigate - Chief Petty Officer's Cabin"
+	name = "Solarian Frigate - "SMES Compartment"
 
 /area/ship/Sol_Frigate/canteen
 	name = "Solarian Frigate - Mess Hall"
@@ -82,14 +91,11 @@
 /area/ship/Sol_Frigate/freezer
 	name = "Solarian Frigate - Freezer"
 
-/area/ship/Sol_Frigate/garage
-	name = "Solarian Frigate - Garage"
+/area/ship/Sol_Frigate/Exo_Bay
+	name = "Solarian Frigate - Exosuit Bay"
 
-/area/ship/Sol_Frigate/infirmary
-	name = "Solarian Frigate - Infirmary"
-
-/area/ship/Sol_Frigate/cryo
-	name = "Solarian Frigate - Cryogenics"
+/area/ship/Sol_Frigate/sickbay
+	name = "Solarian Frigate - Sick Bay"
 
 /area/ship/Sol_Frigate/reactor
 	name = "Solarian Frigate - Reactor Compartment"
