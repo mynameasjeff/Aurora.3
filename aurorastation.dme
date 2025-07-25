@@ -4134,7 +4134,7 @@
 #include "maps\away\ships\sol\sol_ssrm\ssrm_ship_ghostroles.dm"
 #include "maps\away\ships\sol\sol_ssrm\ssrm_ship_landmarks.dm"
 #include "maps\away\ships\sol\sol_ssrm\ssrm_ship_shuttle.dm"
-#include "maps\away\ships\so\Sol_Frigate\Sol_Frigateship_areas.dm"
+#include "maps\away\ships\sol\Sol_Frigate\Sol_Frigateship_areas.dm"
 #include "maps\away\ships\tajara\circus\adhomian_circus.dm"
 #include "maps\away\ships\tajara\circus\adhomian_circus_areas.dm"
 #include "maps\away\ships\tajara\circus\adhomian_circus_items.dm"
