@@ -86,7 +86,7 @@
 	name = "Solarian Frigate - Captain's Cabin"
 
 /area/ship/Sol_Frigate/cpo_cabin
-	name = "Solarian Frigate - "SMES Compartment"
+	name = "Solarian Frigate - SMES Compartment"
 
 /area/ship/Sol_Frigate/canteen
 	name = "Solarian Frigate - Mess Hall"
