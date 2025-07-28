@@ -7,20 +7,17 @@
 	area_flags = AREA_FLAG_RAD_SHIELDED
 	ambience = AMBIENCE_ENGINEERING
 
-/area/ship/Sol_Frigate/hallwayport
+/area/ship/Sol_Frigate/hallway_fore
 	name = "Solarian Frigate - Fore Hallway"
 
-/area/ship/Sol_Frigate/hallway
+/area/ship/Sol_Frigate/hallway_mid
 	name = "Solarian Frigate - Midships Hallway"
 
-/area/ship/Sol_Frigate/hallway
+/area/ship/Sol_Frigate/hallway_aft
 	name = "Solarian Frigate - Aft Hallway"
 
 /area/ship/Sol_Frigate/cic
 	name = "Solarian Frigate - CIC"
-
-/area/ship/Sol_Frigate/telecomms
-	name = "Solarian Frigate - Telecommunications"
 
 /area/ship/Sol_Frigate/Port_docking_port
 	name = "Solarian Frigate - Port Docking Port"
@@ -42,9 +39,6 @@
 
 /area/ship/Sol_Frigate/oquarters
 	name = "Solarian Frigate - Officer's Stateroom"
-
-/area/ship/Sol_Frigate/oquartershead
-	name = "Solarian Frigate - Officer's Stateroom Head"
 
 /area/ship/Sol_Frigate/bunks
 	name = "Solarian Frigate - Crew Berthing Compartment"
@@ -85,8 +79,6 @@
 /area/ship/Sol_Frigate/captain_cabin
 	name = "Solarian Frigate - Captain's Cabin"
 
-/area/ship/Sol_Frigate/cpo_cabin
-	name = "Solarian Frigate - SMES Compartment"
 
 /area/ship/Sol_Frigate/canteen
 	name = "Solarian Frigate - Mess Hall"
@@ -100,8 +92,8 @@
 /area/ship/Sol_Frigate/sickbay
 	name = "Solarian Frigate - Sick Bay"
 
-/area/ship/Sol_Frigate/reactor
-	name = "Solarian Frigate - Reactor Compartment"
+/area/ship/Sol_Frigate/hangar
+	name = "Solarian Frigate - Hangar"
 
 // Shuttles
 /area/shuttle/ssrm_shuttle
