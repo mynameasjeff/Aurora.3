@@ -8,10 +8,13 @@
 	ambience = AMBIENCE_ENGINEERING
 
 /area/ship/Sol_Frigate/hallwayport
-	name = "Solarian Frigate - Port Hallway"
+	name = "Solarian Frigate - "Fore Hallway"
 
 /area/ship/Sol_Frigate/hallway
-	name = "Solarian Frigate - Starboard Hallway"
+	name = "Solarian Frigate - Midships Hallway"
+
+/area/ship/Sol_Frigate/hallway
+	name = "Solarian Frigate - Aft Hallway"
 
 /area/ship/Sol_Frigate/cic
 	name = "Solarian Frigate - CIC"
@@ -44,7 +47,7 @@
 	name = "Solarian Frigate - Officer's Stateroom Head"
 
 /area/ship/Sol_Frigate/bunks
-	name = "Solarian Frigate - Crew Bunks"
+	name = "Solarian Frigate - Crew Berthing Compartment"
 
 /area/ship/Sol_Frigate/eva_storage
 	name = "Solarian Frigate - EVA Storage"
@@ -74,7 +77,7 @@
 	name = "Solarian Frigate - Head"
 
 /area/ship/Sol_Frigate/safe_room
-	name = "Solarian Frigate - Secure Storage"
+	name = "Solarian Frigate - Cargo Hold"
 
 /area/ship/Sol_Frigate/captain_office
 	name = "Solarian Frigate - Captain's Office"
