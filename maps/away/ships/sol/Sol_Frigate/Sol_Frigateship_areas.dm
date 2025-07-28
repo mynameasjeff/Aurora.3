@@ -8,7 +8,7 @@
 	ambience = AMBIENCE_ENGINEERING
 
 /area/ship/Sol_Frigate/hallwayport
-	name = "Solarian Frigate - "Fore Hallway"
+	name = "Solarian Frigate - Fore Hallway"
 
 /area/ship/Sol_Frigate/hallway
 	name = "Solarian Frigate - Midships Hallway"
