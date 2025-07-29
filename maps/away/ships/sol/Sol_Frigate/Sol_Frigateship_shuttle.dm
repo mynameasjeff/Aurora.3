@@ -9,7 +9,7 @@
 	designer = "Solarian Navy"
 	sizeclass = "Norman-Class transport shuttle"
 	shiptype = "Short-distance transportation"
-	colors = list(""#9dc04c", "#52c24c"")
+	colors = list("#9dc04c", "#52c24c")
 	max_speed = 1/(3 SECONDS)
 	burn_delay = 2 SECONDS
 	vessel_mass = 3000
