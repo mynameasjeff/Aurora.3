@@ -28,7 +28,7 @@
 
 // Controls docking behaviour
 /datum/shuttle/autodock/overmap/Solfrig_shuttle
-	name = "SPLF Shuttle"
+	name = "Solarian Frigate Shuttle"
 	move_time = 15
 	shuttle_area = list(/area/shuttle/Solfrig_shuttle)
 	current_location = "nav_hangar_"
@@ -51,14 +51,14 @@
 // --------
 
 // Transit landmark
-/obj/effect/shuttle_landmark/splf_shuttle/transit
+/obj/effect/shuttle_landmark/Sol_Frigate/transit
 	name = "In transit"
-	landmark_tag = "nav_transit_splf_shuttle"
+	landmark_tag = "nav_transit_Solfrig_shuttle"
 	base_turf = /turf/space/transit/north
 // --------
 
 // Shuttle docking port
-/obj/effect/map_effect/marker/airlock/docking/splf_raider/shuttle_port
+/obj/effect/map_effect/marker/airlock/docking/Sol_frigate/shuttle_port
 	name = "Shuttle Dock"
 	landmark_tag = "nav_hangar_solfrig"
 	master_tag = "Solfrig_shuttle_dock"
