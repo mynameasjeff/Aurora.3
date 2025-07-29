@@ -2,7 +2,7 @@
 /obj/effect/overmap/visitable/ship/landable/splf_shuttle
 	name = "Sol Frigate Shuttle"
 	class = "SAMV"
-	desc = "The Norman-Class transport shuttle is the Destrier's smaller, and slightly faster cousin. Prmarily designed for utility transport above all else, it lacks any means to protect itself.\ Normans are usually seen in the hangars of escort warships in the Navy, and in the hands of the Solarian Navy's fag officers as a personal transport.  "
+	desc = "The Norman-Class transport shuttle is the Destrier's smaller, and slightly faster cousin. Prmarily designed for utility transport above all else, it lacks any means to protect itself.\ Normans are usually seen in the hangars of escort warships in the Navy, and in the hands of the Solarian Navy's fag officers as a personal transport."
 	shuttle = "Solarian Navy"
 	icon_state = "shuttle"
 	moving_state = "shuttle_moving"
@@ -23,7 +23,7 @@
 /obj/machinery/computer/shuttle_control/explore/terminal/Solfrig_shuttle
 	name = "shuttle control console"
 	shuttle_tag = ""Solarian Frigate Shuttle""
-	req_access = list(ACCESS_SOLF)
+	req_access = list(ACCESS_SOL_SHIPS)
 // --------
 
 // Controls docking behaviour
