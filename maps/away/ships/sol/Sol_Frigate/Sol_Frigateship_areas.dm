@@ -96,7 +96,7 @@
 	name = "Solarian Frigate - Hangar"
 
 // Shuttles
-/area/shuttle/ssrm_shuttle
+/area/shuttle/Solfrig_shuttle
 	name = "Solarian Frigate - Shuttle"
 	icon_state = "shuttle2"
 	requires_power = TRUE
