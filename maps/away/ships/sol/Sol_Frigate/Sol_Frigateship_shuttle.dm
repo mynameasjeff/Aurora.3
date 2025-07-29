@@ -22,7 +22,7 @@
 
 /obj/machinery/computer/shuttle_control/explore/terminal/Solfrig_shuttle
 	name = "shuttle control console"
-	shuttle_tag = ""Solarian Frigate Shuttle""
+	shuttle_tag = "Solarian Frigate Shuttle"
 	req_access = list(ACCESS_SOL_SHIPS)
 // --------
 
