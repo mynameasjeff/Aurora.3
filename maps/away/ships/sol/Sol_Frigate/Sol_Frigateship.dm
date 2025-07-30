@@ -6,8 +6,8 @@
 	prefix = "ships/sol/Sol_Frigate/"
 	suffix = "Sol_frigateship.dmm"
 
-	sectors = list(SECTOR_BADLANDS, SECTOR_VALLEY_HALE)
-	spawn_weight = 0.5
+	sectors = list(ALL_POSSIBLE_SECTORS)
+	spawn_weight = 9000
 	ship_cost = 1
 	id = "Sol_frigate"
 	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/ssrm_shuttle)
