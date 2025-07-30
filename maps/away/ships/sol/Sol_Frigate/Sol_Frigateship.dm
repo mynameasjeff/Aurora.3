@@ -6,7 +6,7 @@
 	prefix = "ships/sol/Sol_Frigate/"
 	suffix = "Sol_Frigate.dmm"
 
-	sectors = list(SECTOR_ROMANOVICH)
+	sectors = list(ALL_POSSIBLE_SECTORS)
 	spawn_weight = 9
 	ship_cost = 1
 	id = "Sol_frigate"

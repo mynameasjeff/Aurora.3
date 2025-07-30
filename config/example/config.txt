@@ -480,7 +480,7 @@ FORCE_MAP runtime
 #TICKET_REMINDER_PERIOD 600
 
 # What sector the station/station is currently on. Check _defines/space_sectors.dm for possible options
-CURRENT_SPACE_SECTOR Romanovich Cloud
+CURRENT_SPACE_SECTOR Badlands
 
 # If using TGS, counts how many regularly TGS hard restarts the server process.
 # -1 - never do this.
