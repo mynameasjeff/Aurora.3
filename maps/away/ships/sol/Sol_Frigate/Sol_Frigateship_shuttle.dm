@@ -16,7 +16,7 @@
 	fore_dir = WEST
 	vessel_size = SHIP_SIZE_TINY
 
-/obj/effect/overmap/visitable/ship/landable/splf_shuttle/New()
+/obj/effect/overmap/visitable/ship/landable/Solfrig_shuttle/New()
 	designation = "[pick("Courier", "Messanger", "Dispatcher")]"
 	..()
 
