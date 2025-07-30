@@ -4134,6 +4134,8 @@
 #include "maps\away\ships\sol\sol_ssrm\ssrm_ship_ghostroles.dm"
 #include "maps\away\ships\sol\sol_ssrm\ssrm_ship_landmarks.dm"
 #include "maps\away\ships\sol\sol_ssrm\ssrm_ship_shuttle.dm"
+#include "maps\away\ships\sol\Sol_Frigate\Sol_Frigate.dmm"
+#include "maps\away\ships\sol\Sol_Frigate\Sol_Frigateship.dm"
 #include "maps\away\ships\sol\Sol_Frigate\Sol_Frigateship_areas.dm"
 #include "maps\away\ships\sol\Sol_Frigate\Sol_Frigateship_landmarks.dm"
 #include "maps\away\ships\sol\Sol_Frigate\Sol_Frigateship_shuttle.dm"
