@@ -1,5 +1,5 @@
-/datum/ghostspawner/human/ssrm_navy_crewman
-	short_name = "ssrm_navy_crewman"
+/datum/ghostspawner/human/Solfrig_crewman
+	short_name = "Solfrig_crewman"
 	name = "Solarian Frigate Crewman"
 	desc = "Crew a Solarian Naval Frigate, under the command of either the Northern or Southern Solarian Reconstruction Mandate. Serve and protect the interests of the Alliance, whever you are. (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and Colettish accents for the North.)"
 	tags = list("External")
@@ -99,7 +99,7 @@
 	tags = list("External")
 	mob_name_prefix = "SGT. "
 
-	spawnpoints = list("Solfrig_crewman")
+	spawnpoints = list("Solfrig_navy_crewman")
 	max_count = 1
 
 	outfit = /obj/outfit/admin/ssrm_marine_pilot
