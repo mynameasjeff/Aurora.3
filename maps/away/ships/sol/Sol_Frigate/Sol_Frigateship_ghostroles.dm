@@ -73,7 +73,7 @@
 
 /datum/ghostspawner/human/Solfrig_XO
 	short_name = "Solfrig_XO"
-	name = "Solarian Frigate Lieutenant 
+	name = "Solarian Frigate Lieutenant"
 	desc = "Serve as the Executive Officer aboard a Solarian Naval Frigate, under the authority of either the Northern or Southern Solarian Reconstruction Mandate. Follow the orders of your Captain, and defend the interests of the Solarian Alliance. No matter where you are. (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and San Colettish accents for the North.) "
 	mob_name_prefix = "LT. "
 
