@@ -131,10 +131,11 @@
 
 /datum/ghostspawner/human/ssrm_ipc
 	short_name = "Solfrig_intern"
-	name = "Sol Frigate Midshipman "
+	name = "Sol Frigate Midshipman"
 	desc = "Serve as a Solarian Navy Cadet assigned to 'on-the-job' training aboard a Solarian Navy Frigate. Learn how to lead and not be totally incompetent or something.  (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and San Colettish accents for the North.)"
 	tags = list("External")
     mob_name_prefix = "MIDN."
+
 	spawnpoints = list("Solfrig_XO")
 	max_count = 1
 

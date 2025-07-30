@@ -42,12 +42,16 @@
 	fore_dir = SOUTH
 	vessel_size = SHIP_SIZE_LARGE
 	initial_restricted_waypoints = list(
-		"SSRM Shuttle" = list("nav_ssrm_dock")
+		"SSRM Shuttle" = list("nav_hangar_solfrig")
 	)
 
 	initial_generic_waypoints = list(
-		"nav_ssrm_corvette_1",
-		"nav_ssrm_corvette_2"
+		"Sol_Frigate_nav1",
+		"Sol_Frigate_nav2",
+        "Sol_Frigate_nav3",
+        "Sol_Frigate_nav4",
+        "Sol_Frigate_port_dock",
+        "Sol_Frigate_starboard_dock"
 	)
 
 	invisible_until_ghostrole_spawn = TRUE
