@@ -141,12 +141,11 @@
 	assigned_role = "Solarian Navy Cadet"
 	special_role = "Solarian Navy Cadet"
 
-/obj/outfit/admin/Solfrig_navy_XO
+/obj/outfit/admin/Solfrig_navy_intern
 	name = "Solarian Navy Cadet"
 
 	uniform = /obj/item/clothing/under/rank/sol/dress/subofficer
 	shoes = /obj/item/clothing/shoes/laceup
 	back = /obj/item/storage/backpack/satchel/leather
 	head = /obj/item/clothing/head/sol/dress
-	accessory = /obj/item/clothing/accessory/holster/thigh
 
