@@ -129,52 +129,24 @@
 /obj/outfit/admin/ssrm_marine_pilot/get_id_access()
 	return list(ACCESS_SOL_SHIPS, ACCESS_EXTERNAL_AIRLOCKS)
 
-/datum/ghostspawner/human/ssrm_ipc
-	short_name = "Solfrig_intern"
-	name = "Sol Frigate Midshipman"
-	desc = "Serve as a Solarian Navy Cadet assigned to 'on-the-job' training aboard a Solarian Navy Frigate. Learn how to lead and not be totally incompetent or something.  (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and San Colettish accents for the North.)"
-	tags = list("External")
-    mob_name_prefix = "MIDN."
+/datum/ghostspawner/human/Solfrig_Intern
+	short_name = "Solfrig_Intern"
+	name = "Solarian Frigate Midshipman"
+	desc = "Serve as an officer-in-training aboard a Solarian Navy Frigate. Learn to lead, and not to be totally incompetent. (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and San Colettish accents for the North.) "
+	mob_name_prefix = "MIDN. "
 
 	spawnpoints = list("Solfrig_XO")
 	max_count = 1
 
-	outfit = /obj/outfit/admin/Solfrig_XO
-	possible_species = list(SPECIES_HUMAN)
-	uses_species_whitelist = TRUE
-	allow_appearance_change = APPEARANCE_PLASTICSURGERY
+	assigned_role = "Solarian Navy Cadet"
+	special_role = "Solarian Navy Cadet"
 
-	assigned_role = "Solarian Naval Academy Cadet"
-	special_role = "Solarian Naval Academy Cadet"
-	respawn_flag = null
+/obj/outfit/admin/Solfrig_navy_XO
+	name = "Solarian Navy Cadet"
 
+	uniform = /obj/item/clothing/under/rank/sol/dress/subofficer
+	shoes = /obj/item/clothing/shoes/laceup
+	back = /obj/item/storage/backpack/satchel/leather
+	head = /obj/item/clothing/head/sol/dress
+	accessory = /obj/item/clothing/accessory/holster/thigh
 
-/obj/outfit/admin/Solfrig_intern
-	name = "Solarian Midshipman"
-
-	uniform = /obj/item/clothing/under/rank/sol/ipc
-	shoes = /obj/item/clothing/shoes/jackboots
-	back = /obj/item/storage/backpack/satchel
-	belt = /obj/item/storage/belt/utility/full
-
-	id = /obj/item/card/id/ssrm_ship
-
-	l_ear = /obj/item/device/radio/headset/ship
-
-	backpack_contents = list(/obj/item/storage/box/survival = 1, /obj/item/melee/energy/sword/knife/sol = 1)
-
-/obj/outfit/admin/ssrm_ipc/post_equip(mob/living/carbon/human/H, visualsOnly)
-	var/obj/item/organ/internal/ipc_tag/tag = H.internal_organs_by_name[BP_IPCTAG]
-	if(istype(tag))
-		tag.serial_number = uppertext(dd_limittext(md5(H.real_name), 12))
-		tag.ownership_info = IPC_OWNERSHIP_PRIVATE
-		tag.citizenship_info = CITIZENSHIP_NONE
-
-/obj/outfit/admin/ssrm_ipc/get_id_access()
-	return list(ACCESS_SOL_SHIPS, ACCESS_EXTERNAL_AIRLOCKS)
-
-//items
-
-/obj/item/card/id/ssrm_ship
-	name = "\improper Sol Navy Recon identification card"
-	access = list(ACCESS_SOL_SHIPS, ACCESS_EXTERNAL_AIRLOCKS)
