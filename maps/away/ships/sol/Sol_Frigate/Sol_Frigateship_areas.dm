@@ -13,9 +13,6 @@
 /area/ship/Sol_Frigate/hallway_mid
 	name = "Solarian Frigate - Midships Hallway"
 
-/area/ship/Sol_Frigate/hallway_aft
-	name = "Solarian Frigate - Aft Hallway"
-
 /area/ship/Sol_Frigate/cic
 	name = "Solarian Frigate - CIC"
 
@@ -56,13 +53,10 @@
 	name = "Solarian Frigate - Starboard Battery"
 
 /area/ship/Sol_Frigate/starboard_gunnery
-	name = "Solarian Frigate - Starboard Gunnery"
+	name = "Solarian Frigate - Aft Hallway"
 
 /area/ship/Sol_Frigate/port_battery
 	name = "Solarian Frigate - Port Battery"
-
-/area/ship/Sol_Frigate/port_gunnery
-	name = "Solarian Frigate - Port Gunnery"
 
 /area/ship/Sol_Frigate/crew_lounge
 	name = "Solarian Frigate - Hydroponics"
