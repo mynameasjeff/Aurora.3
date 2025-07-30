@@ -54,7 +54,7 @@
 "cC" = (/obj/effect/floor_decal/corner/dark_blue{dir = 9},/obj/effect/floor_decal/corner/dark_blue{dir = 5},/turf/simulated/floor/tiled/dark,/area/ship/Sol_Frigate/Starboard_docking_port)
 "cE" = (/turf/simulated/wall/shuttle/raider,/area/ship/Sol_Frigate/armoury)
 "cI" = (/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/obj/effect/floor_decal/corner/yellow{dir = 9},/turf/simulated/floor/tiled/dark,/area/ship/Sol_Frigate/hallway_fore)
-"cL" = (/obj/structure/bed/padded,/obj/item/bedsheet/blue,/obj/structure/curtain/open,/obj/machinery/light{dir = 8},/obj/effect/ghostspawpoint{identifier = "Solfrig_intern"},/turf/simulated/floor/wood,/area/ship/Sol_Frigate/oquarters)
+"cL" = (/obj/structure/bed/padded,/obj/item/bedsheet/blue,/obj/structure/curtain/open,/obj/machinery/light{dir = 8},/obj/effect/ghostspawpoint{identifier = "Solfrig_Intern"},/turf/simulated/floor/wood,/area/ship/Sol_Frigate/oquarters)
 "cN" = (/obj/structure/closet,/obj/item/clothing/under/rank/sol/dress/subofficer,/obj/item/clothing/under/rank/sol/dress/subofficer,/obj/item/clothing/head/sol/dress/officer,/obj/item/clothing/head/sol/dress/officer,/obj/item/clothing/shoes/jackboots,/obj/item/clothing/shoes/jackboots,/obj/machinery/light{dir = 4},/turf/simulated/floor/wood,/area/ship/Sol_Frigate/oquarters)
 "cO" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 1},/turf/simulated/floor/tiled/dark,/area/ship/Sol_Frigate/hallway_fore)
 "cS" = (/obj/effect/floor_decal/corner/grey/diagonal,/turf/simulated/floor/tiled/freezer{name = "cooled tiles"; temperature = 253.15},/area/ship/Sol_Frigate/canteen)
