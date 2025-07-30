@@ -17,8 +17,8 @@
 	respawn_flag = null
 
 
-/obj/outfit/admin/ssrm_navy_crewman
-	name = "Sol Recon Navy Crewman"
+/obj/outfit/admin/solfrig_navy_crewman
+	name = "Solarian Frigate Crewman"
 
 	uniform = /obj/item/clothing/under/rank/sol
 	shoes = /obj/item/clothing/shoes/jackboots
@@ -31,7 +31,7 @@
 
 	backpack_contents = list(/obj/item/storage/box/survival = 1, /obj/item/melee/energy/sword/knife/sol = 1)
 
-/obj/outfit/admin/ssrm_navy_crewman/get_id_access()
+/obj/outfit/admin/Solfrig_navy_crewman/get_id_access()
 	return list(ACCESS_SOL_SHIPS, ACCESS_EXTERNAL_AIRLOCKS)
 
 /datum/ghostspawner/human/ssrm_navy_officer
@@ -135,7 +135,7 @@
 	desc = "Serve as an officer-in-training aboard a Solarian Navy Frigate. Learn to lead, and not to be totally incompetent. (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and San Colettish accents for the North.) "
 	mob_name_prefix = "MIDN. "
 
-	spawnpoints = list("Solfrig_XO")
+	spawnpoints = list("Solfrig_Intern")
 	max_count = 1
 
 	assigned_role = "Solarian Navy Cadet"

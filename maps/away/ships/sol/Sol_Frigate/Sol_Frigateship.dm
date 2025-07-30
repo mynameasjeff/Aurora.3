@@ -10,7 +10,7 @@
 	spawn_weight = 9
 	ship_cost = 1
 	id = "Sol_frigate"
-	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/ssrm_shuttle)
+	shuttles_to_initialise = list(/datum/shuttle/autodock/overmap/Solfrig_shuttle)
 
 	unit_test_groups = list(3)
 
@@ -42,7 +42,7 @@
 	fore_dir = SOUTH
 	vessel_size = SHIP_SIZE_LARGE
 	initial_restricted_waypoints = list(
-		"SSRM Shuttle" = list("nav_hangar_solfrig")
+		"Solfrig_shuttle" = list("nav_hangar_solfrig")
 	)
 
 	initial_generic_waypoints = list(
@@ -56,7 +56,7 @@
 
 	invisible_until_ghostrole_spawn = TRUE
 
-/obj/effect/overmap/visitable/ship/ssrm_corvette/New()
+/obj/effect/overmap/visitable/ship/Sol_Frigate/New()
 	designation = "[pick("Defender", "Gladiator", "Greyhound", "Vanguard", "Undaunted", "Unchallenged", "Triumphant", "Indefatigable", "Excellent", "Unrelenting", "Furious", "Senate", "Constitution", "Pride and Glory", "Unity", "Superior", "Hunter", "Repulse", "Warspite", "Valiant", "Turner", "Nimitz", "Halsey", "Spurance", "Ingram", "Persistance", "Endurance", "Sprinter")]"
 	..()
 
