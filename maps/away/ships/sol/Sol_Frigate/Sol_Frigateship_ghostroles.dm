@@ -95,7 +95,7 @@
 /datum/ghostspawner/human/ssrm_marine_pilot
 	short_name = "ssrm_marine_pilot"
 	name = "Sol Marine Recon Exosuit Pilot"
-	desc = "Serve as the Exosuit Pilot aboard an Solarian Frigate. Under the authority of either the Northern or Southern Solarian Reconstruction Mandate. Defend your ship, the honor of the corps, and the intrests of the Solarian Government. Oorah!
+	desc = "Serve as the Exosuit Pilot aboard an Solarian Frigate. Under the authority of either the Northern or Southern Solarian Reconstruction Mandate. Defend your ship, the honor of the corps, and the intrests of the Solarian Government. Oorah!"
 	tags = list("External")
 	mob_name_prefix = "SGT. "
 
