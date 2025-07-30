@@ -35,7 +35,7 @@
 	return list(ACCESS_SOL_SHIPS, ACCESS_EXTERNAL_AIRLOCKS)
 
 /datum/ghostspawner/human/ssrm_navy_officer
-	short_name = "ssrm_navy_officer"
+	short_name = "Solfrig_Commander"
 	name = "Solarian Frigate Commander"
 	desc = "Command a Solarian Naval Frigate, under the authority of either the Northern or Southern Solarian Reconstruction Mandate. Serve and defend the interests of the Solarian Government, wherever you are assigned to. Praying for a more prestigious command is optional (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and San Colettish accents for the North.) "
 	tags = list("External")
