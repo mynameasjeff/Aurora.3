@@ -1,7 +1,7 @@
 /datum/ghostspawner/human/ssrm_navy_crewman
 	short_name = "ssrm_navy_crewman"
 	name = "Solarian Frigate Crewman"
-	desc = "Crew a Solarian Naval Frigate, under the command of either the Northern or Southern Solarian Reconstruction Mandate. Serve and protect the interests of the Alliance, whever you are. (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and Colettish accents for the North.)
+	desc = "Crew a Solarian Naval Frigate, under the command of either the Northern or Southern Solarian Reconstruction Mandate. Serve and protect the interests of the Alliance, whever you are. (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and Colettish accents for the North.)"
 	tags = list("External")
 	mob_name_prefix = "PO3. "
 
