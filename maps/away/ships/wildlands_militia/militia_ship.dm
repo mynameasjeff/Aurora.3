@@ -13,12 +13,12 @@
 
 	unit_test_groups = list(3)
 
-/singleton/submap_archetype/ssrm_corvette
+/singleton/submap_archetype/militia_ship
 	map = "Freelancer Mercenary Ship"
 	descriptor = "Perhaps one of Hephaestus Industries's most successful designs, The Axiom-Class Utility Cutter is a common sight in nearly every major power in the Orion Spur thanks to it's ease of prodution and cost effectiveness. While the design frequently sees use as a tug, utility vehicle, or for short range-transportation. Independent Spacers also frequently purchase used Axioms on the cheap and modify it to varying degrees for their own needs. This specimen in particular has faced extensive modifications for ship-to-ship combat and scouting."
 // Ship stuff
 
-/obj/effect/overmap/visitable/ship/ssrm_corvette
+/obj/effect/overmap/visitable/ship/militia_ship
 	name = "Freelancer Mercenary Vessel"
 	class = "ICV"
 	desc = "Perhaps one of Hephaestus Industries's most successful designs, The Axiom-Class Utility Cutter is a common sight in nearly every major power in the Orion Spur thanks to it's ease of prodution and cost effectiveness. While the design frequently sees use as a tug, utility vehicle, or for short range-transportation. Independent Spacers also frequently purchase used Axioms on the cheap and modify it to varying degrees for their own needs. This specimen in particular has faced extensive modifications for ship-to-ship combat and scouting."
