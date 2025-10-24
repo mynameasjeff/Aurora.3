@@ -47,7 +47,7 @@
 
 	invisible_until_ghostrole_spawn = TRUE
 
-/obj/effect/overmap/visitable/ship/milia_ship/New()
+/obj/effect/overmap/visitable/ship/militia_ship/New()
 	designation = "[pick("Earner of the Year", "Problems go away here", "Into the greens", "Credit printer", "Odd evener", "We fight 4 Cash", "Landsknetch", "Golden Horde", "Vikinger", "Rounds in, money out", "Fortuna", "Breaking Even", "We fight dirty", "Discounts 4 Collies", "Discounts 4 Imps", "Fuck you Joseph Dorn", "Job wanted, can shoot", "Poverty ender 9000", "Rensberg's bastard children", "Too good for Zavod", "Too good for the Marines")]"
 	..()
 
