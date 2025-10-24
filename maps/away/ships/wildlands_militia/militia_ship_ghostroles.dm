@@ -1,6 +1,6 @@
 /datum/ghostspawner/human/militia_crew
 	short_name = "militia_crew"
-	name = "Militiaman"
+	name = "Mercenary Crew"
 	desc = "Crew the militia ship. Help those that need it, try to keep your slice of space clean and safe of anyone the TCFL and SCC miss - there are people counting on you. Double as a hired gun, to make a few bucks."
 	tags = list("External")
 
@@ -17,7 +17,7 @@
 
 
 /obj/outfit/admin/militia_crew
-	name = "Militiaman"
+	name = "Independent Spacer"
 
 	uniform = /obj/item/clothing/under/tactical
 	shoes = /obj/item/clothing/shoes/workboots/dark
@@ -39,7 +39,7 @@
 
 /datum/ghostspawner/human/militia_crew/captain
 	short_name = "militia_crew_captain"
-	name = "Militia Captain"
+	name = "Mercenary Captain"
 	desc = "Captain the militia ship. Help those that need it, try to keep your slice of space clean and safe of anyone the TCFL and SCC miss - there are people counting on you. Double as a hired gun, to make a few bucks."
 
 	spawnpoints = list("militia_crew_captain")
@@ -54,10 +54,10 @@
 
 
 /obj/outfit/admin/militia_crew/captain
-	name = "Militia Captain"
+	name = "Independent Spacer Captain"
 
 	accessory = /obj/item/clothing/accessory/sash/red
 
 /obj/item/card/id/militia_ship
-	name = "militia ship id"
+	name = "Mercenary ship id"
 	access = list(ACCESS_EXTERNAL_AIRLOCKS)
