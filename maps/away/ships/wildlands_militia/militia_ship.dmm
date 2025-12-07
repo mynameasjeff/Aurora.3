@@ -33,7 +33,7 @@
 	},
 /turf/simulated/floor/tiled/dark)
 "ajL" = (
-/turf/simulated/floor,
+/turf/space,
 /area/space)
 "aou" = (
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -82,8 +82,7 @@
 /obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/white)
 "aHs" = (
-/obj/effect/floor_decal/corner/dark_blue/diagonal,
-/obj/effect/overmap/visitable/ship/militia_ship,
+/obj/structure/target_stake,
 /turf/simulated/floor/tiled/dark,
 /area/space)
 "aHt" = (
@@ -137,6 +136,12 @@
 "aSN" = (
 /obj/effect/floor_decal/corner/red/diagonal,
 /turf/simulated/floor/tiled/white)
+"aXh" = (
+/obj/machinery/door/airlock/engineering{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/space)
 "bcf" = (
 /obj/item/clothing/head/cone,
 /obj/item/clothing/head/cone{
@@ -152,13 +157,6 @@
 /obj/effect/floor_decal/corner/green/diagonal,
 /obj/effect/floor_decal/corner/green/diagonal,
 /turf/simulated/floor/tiled/white,
-/area/space)
-"bdy" = (
-/obj/structure/weapons_rack,
-/obj/item/gun/projectile/automatic/rifle/carbine,
-/obj/item/gun/projectile/automatic/rifle/carbine/civcarbine,
-/obj/item/gun/projectile/automatic/rifle/dominia_carbine,
-/turf/simulated/floor/tiled/dark,
 /area/space)
 "bey" = (
 /obj/machinery/light{
@@ -234,6 +232,10 @@
 	dir = 10
 	},
 /turf/unsimulated/floor/wood)
+"cQs" = (
+/obj/effect/floor_decal/industrial/loading/firefighting_closet,
+/turf/simulated/floor/tiled/dark,
+/area/space)
 "cTq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/cryopod{
@@ -311,10 +313,6 @@
 /obj/machinery/portable_atmospherics/canister/air/airlock,
 /obj/structure/lattice/catwalk/indoor/grate,
 /turf/simulated/floor)
-"ewW" = (
-/obj/structure/bed/stool/chair/plastic,
-/turf/simulated/floor/tiled/dark,
-/area/space)
 "exg" = (
 /obj/machinery/door/airlock/hatch{
 	name = "Hangar";
@@ -481,10 +479,6 @@
 /obj/item/clothing/accessory/holster/armpit,
 /obj/item/gun/projectile/revolver,
 /turf/unsimulated/floor/wood)
-"goI" = (
-/obj/machinery/suit_cycler/freelancer/prepared,
-/turf/simulated/floor/tiled/dark,
-/area/space)
 "gxW" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -553,14 +547,6 @@
 	icon_state = "tube_empty"
 	},
 /turf/simulated/floor/tiled/white)
-"hBs" = (
-/obj/structure/table/standard,
-/obj/item/device/firing_pin,
-/obj/item/towel{
-	pixel_y = 6
-	},
-/turf/simulated/floor/tiled/dark,
-/area/space)
 "hGt" = (
 /obj/structure/sign/vacuum{
 	pixel_y = -30
@@ -603,6 +589,13 @@
 /obj/item/ship_ammunition/autocannon,
 /obj/item/ship_ammunition/autocannon,
 /obj/effect/floor_decal/industrial/outline_corner/red,
+/turf/simulated/floor/tiled/dark,
+/area/space)
+"iiZ" = (
+/obj/machinery/door/airlock/security{
+	name = "Crew Quarters";
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
 /area/space)
 "inf" = (
@@ -702,6 +695,11 @@
 	},
 /turf/simulated/floor/tiled/dark,
 /area/space)
+"kzm" = (
+/obj/effect/floor_decal/industrial/loading/firefighting_closet,
+/obj/effect/floor_decal/industrial/loading/firefighting_closet,
+/turf/simulated/floor/tiled/dark,
+/area/space)
 "kAt" = (
 /obj/structure/table/steel,
 /obj/item/storage/chewables/tobacco/bad,
@@ -729,12 +727,6 @@
 /turf/simulated/floor/tiled/white)
 "lhC" = (
 /turf/unsimulated/floor/wood)
-"lpe" = (
-/obj/machinery/door/airlock/engineering{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/dark,
-/area/space)
 "lri" = (
 /turf/simulated/floor/reinforced/airless)
 "lwj" = (
@@ -831,10 +823,6 @@
 	weapon_id = "Militia Francisca Rotary Gun"
 	},
 /turf/simulated/floor/tiled/dark)
-"ntt" = (
-/obj/structure/weapons_rack,
-/turf/simulated/floor/tiled/dark,
-/area/space)
 "nty" = (
 /obj/structure/table/stone/marble,
 /obj/item/reagent_containers/cooking_container/board/bowl,
@@ -867,9 +855,6 @@
 	weapon_id = "Militia Francisca Rotary Gun"
 	},
 /turf/simulated/floor/airless)
-"nSy" = (
-/turf/space,
-/area/space)
 "nTM" = (
 /obj/structure/table/steel,
 /obj/item/folder/blue{
@@ -887,10 +872,6 @@
 /obj/machinery/appliance/cooker/oven,
 /obj/effect/floor_decal/corner/black/diagonal,
 /turf/simulated/floor/tiled/white)
-"ofY" = (
-/obj/machinery/door/airlock/external,
-/turf/simulated/floor,
-/area/space)
 "ogz" = (
 /obj/structure/sink{
 	pixel_y = 26
@@ -968,6 +949,9 @@
 "pAh" = (
 /obj/effect/map_effect/window_spawner/full/reinforced/grille,
 /turf/simulated/floor/plating)
+"pDZ" = (
+/turf/simulated/floor,
+/area/space)
 "pJZ" = (
 /obj/machinery/light{
 	icon_state = "tube_empty"
@@ -985,10 +969,6 @@
 /obj/structure/ship_weapon_dummy,
 /obj/structure/ship_weapon_dummy,
 /turf/simulated/floor/airless)
-"qil" = (
-/obj/item/gun/projectile/automatic/rifle/dominia_carbine,
-/turf/template_noop,
-/area/space)
 "que" = (
 /obj/effect/step_trigger/teleporter,
 /turf/space/transit/north,
@@ -1020,14 +1000,10 @@
 	},
 /turf/simulated/floor/tiled/dark)
 "rtf" = (
-/obj/machinery/door/airlock/security{
-	name = "Crew Quarters";
-	dir = 1
-	},
+/obj/structure/table/standard,
+/obj/item/clothing/ears/earmuffs,
+/obj/item/clothing/glasses/safety/goggles/tactical,
 /turf/simulated/floor/tiled/dark,
-/area/space)
-"rNp" = (
-/turf/unsimulated/wall/steel,
 /area/space)
 "spX" = (
 /obj/machinery/computer/ship/sensors/terminal{
@@ -1041,10 +1017,6 @@
 	name = "aft, starboard engine"
 	},
 /turf/simulated/floor,
-/area/space)
-"szY" = (
-/obj/structure/table/standard,
-/turf/simulated/floor/tiled/dark,
 /area/space)
 "sGi" = (
 /obj/structure/bed/stool/chair/sofa/right{
@@ -1190,6 +1162,11 @@
 "uWn" = (
 /obj/effect/map_effect/window_spawner/full/borosilicate/reinforced,
 /turf/simulated/floor)
+"vdz" = (
+/obj/effect/floor_decal/corner/dark_blue/diagonal,
+/obj/effect/overmap/visitable/ship/militia_ship,
+/turf/simulated/floor/tiled/dark,
+/area/space)
 "vdX" = (
 /obj/structure/lattice,
 /turf/template_noop,
@@ -1216,6 +1193,10 @@
 	},
 /obj/effect/floor_decal/corner/green/diagonal,
 /turf/simulated/floor/tiled/white,
+/area/space)
+"vwF" = (
+/obj/structure/table/standard,
+/turf/simulated/floor/tiled/dark,
 /area/space)
 "vxN" = (
 /obj/structure/closet/crate,
@@ -1278,6 +1259,10 @@
 /obj/effect/floor_decal/corner/green/diagonal,
 /turf/simulated/floor/tiled/white,
 /area/space)
+"wfy" = (
+/obj/machinery/door/airlock/external,
+/turf/simulated/floor,
+/area/space)
 "wji" = (
 /obj/machinery/door/airlock/security{
 	name = "Crew Quarters";
@@ -1302,18 +1287,6 @@
 /obj/effect/floor_decal/corner/green/diagonal,
 /obj/effect/floor_decal/corner/green/diagonal,
 /turf/simulated/floor/tiled/white,
-/area/space)
-"wtz" = (
-/obj/structure/table/standard,
-/obj/item/device/flashlight/lamp{
-	pixel_y = 8;
-	pixel_x = -8
-	},
-/obj/item/screwdriver{
-	pixel_y = -1;
-	pixel_x = 10
-	},
-/turf/simulated/floor/tiled/dark,
 /area/space)
 "wxY" = (
 /obj/machinery/light{
@@ -31831,7 +31804,7 @@ xoc
 hiw
 xoc
 aaI
-lpe
+aXh
 aaI
 aaI
 aaI
@@ -33670,11 +33643,11 @@ vRq
 vRq
 vRq
 aae
-ofY
-ajL
-ajL
-ajL
-ofY
+wfy
+pDZ
+pDZ
+pDZ
+wfy
 xRX
 xRX
 xRX
@@ -33927,11 +33900,11 @@ vRq
 vRq
 vRq
 aae
-ofY
-ajL
-ajL
-ajL
-ofY
+wfy
+pDZ
+pDZ
+pDZ
+wfy
 xRX
 xRX
 xRX
@@ -34417,11 +34390,11 @@ aae
 aae
 aae
 aaI
-nSy
-nSy
-nSy
-nSy
-nSy
+aae
+aae
+aae
+aae
+aae
 xoc
 mtM
 hWh
@@ -34666,7 +34639,7 @@ aae
 aae
 aae
 aae
-rtf
+iiZ
 aae
 aae
 aae
@@ -34674,11 +34647,11 @@ aae
 aae
 aae
 aaI
-nSy
-nSy
-nSy
-nSy
-nSy
+aae
+aae
+aae
+aae
+aae
 xoc
 ctQ
 vRq
@@ -34696,7 +34669,7 @@ xoc
 lri
 aaI
 fZq
-aHs
+vdz
 fZq
 lxV
 ome
@@ -34913,13 +34886,13 @@ aaI
 xoc
 xoc
 hiw
-xoc
-rNp
-rNp
-rNp
-rNp
-rNp
-rNp
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
 aae
 aae
 aae
@@ -34931,11 +34904,11 @@ aae
 aae
 aae
 aaI
-nSy
-nSy
-nSy
-nSy
-nSy
+aae
+aae
+aae
+aae
+aae
 xoc
 mxc
 ctQ
@@ -35170,29 +35143,29 @@ aou
 aSi
 gHC
 mkb
-xoc
-goI
-aae
-bdy
-ntt
-ntt
-rNp
-aae
-aae
-aae
-szY
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
 aae
 aae
 aae
+rtf
+cQs
 aae
+aae
+aHs
 aae
 aae
 aaI
-nSy
-nSy
-nSy
-nSy
-nSy
+aae
+aae
+aae
+aae
+aae
 xoc
 xoc
 xoc
@@ -35427,29 +35400,29 @@ aHt
 aJd
 mkb
 mkb
-xoc
-goI
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
 aae
 aae
 aae
-aae
-rNp
-aae
-aae
-aae
-szY
+vwF
+cQs
 aae
 aae
-aae
-aae
+aHs
 aae
 aae
 aaI
-nSy
-nSy
-nSy
-nSy
-nSy
+aae
+aae
+aae
+aae
+aae
 xoc
 tnP
 vRq
@@ -35684,29 +35657,29 @@ aHv
 aSJ
 mkb
 mkb
-xoc
-goI
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
 aae
 aae
 aae
-aae
-rtf
-aae
-aae
-aae
-szY
+vwF
+kzm
 aae
 aae
-aae
-aae
+aHs
 aae
 aae
 aaI
-nSy
-nSy
-nSy
-nSy
-nSy
+aae
+aae
+aae
+aae
+aae
 xoc
 tpL
 tpL
@@ -35941,29 +35914,29 @@ xoc
 xoc
 uWn
 uWn
-xoc
-goI
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
 aae
 aae
 aae
-wtz
-rNp
+vwF
+cQs
 aae
 aae
-aae
-szY
-aae
-aae
-aae
-aae
+aHs
 aae
 aae
 aaI
-nSy
-nSy
-nSy
-nSy
-nSy
+aae
+aae
+aae
+aae
+aae
 xoc
 euz
 vJj
@@ -36198,13 +36171,20 @@ kaR
 xoc
 mwP
 mwP
-xoc
-goI
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
 aae
 aae
-ewW
-hBs
-rNp
+aae
+aaI
+aae
+aae
+aae
 aae
 aae
 aae
@@ -36214,13 +36194,6 @@ aae
 aae
 aae
 aae
-aae
-aaI
-xRX
-xRX
-xRX
-xRX
-xRX
 xoc
 xoc
 pAh
@@ -36455,13 +36428,13 @@ xRX
 aaI
 aaI
 aaI
-aaI
-aaI
-aaI
-aaI
-aaI
-aaI
-aaI
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
+ajL
 aaI
 aaI
 aaI
@@ -37740,7 +37713,7 @@ xRX
 xRX
 xRX
 xRX
-qil
+xRX
 xRX
 xRX
 xRX
