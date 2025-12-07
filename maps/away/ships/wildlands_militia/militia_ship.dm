@@ -1,5 +1,5 @@
 /datum/map_template/ruin/away_site/militia_ship
-	name = "Freelancer Mercenary Ship"
+	name = "Freelance Mercenary Ship"
 	description = "Perhaps one of Hephaestus Industries's most successful designs, The Axiom-Class Utility Cutter is a common sight in nearly every major power in the Orion Spur thanks to it's ease of prodution and cost effectiveness. While the design frequently sees use as a tug, utility vehicle, or for short range-transportation. Independent Spacers also frequently purchase used Axioms on the cheap and modify it to varying degrees for their own needs. This specimen in particular has faced extensive modifications for ship-to-ship combat and scouting."
 
 	prefix = "ships/wildlands_milita"
@@ -14,12 +14,12 @@
 	unit_test_groups = list(3)
 
 /singleton/submap_archetype/militia_ship
-	map = "Freelancer Mercenary Ship"
+	map = "Freelance Mercenary Ship"
 	descriptor = "Perhaps one of Hephaestus Industries's most successful designs, The Axiom-Class Utility Cutter is a common sight in nearly every major power in the Orion Spur thanks to it's ease of prodution and cost effectiveness. While the design frequently sees use as a tug, utility vehicle, or for short range-transportation. Independent Spacers also frequently purchase used Axioms on the cheap and modify it to varying degrees for their own needs. This specimen in particular has faced extensive modifications for ship-to-ship combat and scouting."
 // Ship stuff
 
 /obj/effect/overmap/visitable/ship/militia_ship
-	name = "Freelancer Mercenary Vessel"
+	name = "Freelance Mercenary Vessel"
 	class = "ICV"
 	desc = "Perhaps one of Hephaestus Industries's most successful designs, The Axiom-Class Utility Cutter is a common sight in nearly every major power in the Orion Spur thanks to it's ease of prodution and cost effectiveness. While the design frequently sees use as a tug, utility vehicle, or for short range-transportation. Independent Spacers also frequently purchase used Axioms on the cheap and modify it to varying degrees for their own needs. This specimen in particular has faced extensive modifications for ship-to-ship combat and scouting."
 	icon_state = "tramp"
@@ -28,7 +28,7 @@
 	designer = "MANUFACTURER UNKNOWN, SUBJECT MODEL MODIFIED BEYOND RECONGITION"
 	volume = "49 meters length, 30 meters beam/width, 14 meters vertical height"
 	drive = "Low-Speed Warp Acceleration FTL Drive"
-	weapons = "Dual extrouding improvised weapons bay(s), port external docking arm"
+	weapons = "Dual extrouding improvised weapon mounts, port external docking arm"
 	sizeclass = "Axiom-Class Utility Cutter (modified)"
 	shiptype = "Modified Paramilitary Vessel"
 	max_speed = 1/(2 SECONDS)
