@@ -35,17 +35,17 @@
 	icon_state = "small_burst"
 	damage = 100
 	armor_penetration = 50
-	penetrating = 0
+	penetrating = 5
 
 /obj/projectile/ship_ammo/grauwolf/on_hit(atom/target, blocked, def_zone, is_landmark_hit)
 	. = ..()
 	if(ammo && ammo.impact_type == SHIP_AMMO_IMPACT_HE)
-		explosion(target, 0, 2, 4)
+		explosion(target, 0, 2, 8)
 	else
-		explosion(target, 0, 1, 2)
+		explosion(target, 0, 2, 4)
 
 /obj/projectile/ship_ammo/grauwolf/ap
 	name = "armor-piercing flak"
 	damage = 50
 	armor_penetration = 50
-	penetrating = 2
+	penetrating = 20
