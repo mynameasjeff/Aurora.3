@@ -1,4 +1,4 @@
-#define LOBBY_TIME 180
+#define LOBBY_TIME 150
 
 #define SETUP_OK 0
 #define SETUP_REVOTE 1
@@ -7,9 +7,7 @@
 ///The time at which the next automatic transfer vote will be called
 GLOBAL_VAR_INIT(next_transfer_time, null)
 
-var/datum/controller/subsystem/ticker/SSticker
-
-/datum/controller/subsystem/ticker
+SUBSYSTEM_DEF(ticker)
 	// -- Subsystem stuff --
 	name = "Ticker"
 
@@ -72,9 +70,6 @@ var/datum/controller/subsystem/ticker/SSticker
 	var/total_players = 0
 	var/total_players_ready = 0
 	var/list/ready_player_jobs
-
-/datum/controller/subsystem/ticker/New()
-	NEW_SS_GLOBAL(SSticker)
 
 /datum/controller/subsystem/ticker/Initialize(timeofday)
 	pregame()
@@ -450,7 +445,7 @@ var/datum/controller/subsystem/ticker/SSticker
 		LAZYINITLIST(ready_player_jobs)
 
 		if (dynamic_time <= GLOB.config.vote_autogamemode_timeleft)
-			pregame_timeleft = GLOB.config.vote_autogamemode_timeleft + 10
+			pregame_timeleft = GLOB.config.vote_autogamemode_timeleft + 60
 			LOG_DEBUG("SSticker: dynamic set pregame time [dynamic_time]s was less than or equal to configured autogamemode vote time [GLOB.config.vote_autogamemode_timeleft]s, clamping.")
 		else
 			pregame_timeleft = dynamic_time

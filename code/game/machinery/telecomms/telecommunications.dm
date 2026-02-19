@@ -21,7 +21,7 @@
 	density = TRUE
 	anchored = TRUE
 	idle_power_usage = 600 // WATTS
-	active_power_usage = 2 KILO WATTS
+	active_power_usage = 15 KILO WATTS
 
 	/// List of machines this machine is linked to
 	var/list/links = list()
@@ -61,8 +61,15 @@
 	/// Overmap ranges in terms of map tile distance, used by receivers, relays, and broadcasters (and AIOs)
 	var/overmap_range = 0
 
-	///Looping sounds for any servers
-//	var/datum/looping_sound/server/soundloop
+	/// Is this device currently scrambling all comms? Used for random events.
+	var/ion_storm = FALSE
+
+	///Does this device produce sound?
+	var/produces_sound = FALSE
+	///Looping sound to use for this telecomm machine.
+	var/soundloop = /datum/looping_sound/server
+	///Private variable to store the looping sound's ID
+	VAR_PRIVATE/datum/looping_sound/telecomms_looping_sound
 
 /obj/machinery/telecomms/condition_hints(mob/user, distance, is_adjacent)
 	. += ..()
@@ -86,13 +93,13 @@
 
 /obj/machinery/telecomms/Initialize(mapload)
 	. = ..()
-//	soundloop = new(list(src), on)
 	SSmachinery.all_telecomms += src
 
 	if(mapload)
 		return INITIALIZE_HINT_LATELOAD
 
 /obj/machinery/telecomms/LateInitialize()
+	. = ..()
 	if(SSatlas.current_map.use_overmap && !linked)
 		var/my_sector = GLOB.map_sectors["[z]"]
 		if (istype(my_sector, /obj/effect/overmap/visitable))
@@ -106,11 +113,11 @@
 	update_icon()
 
 /obj/machinery/telecomms/Destroy()
-//	QDEL_NULL(soundloop)
 	SSmachinery.all_telecomms -= src
 	for(var/obj/machinery/telecomms/comm in SSmachinery.all_telecomms)
 		remove_link(comm)
 	links = list()
+	QDEL_NULL(telecomms_looping_sound)
 	return ..()
 
 /// This proc returns distance, so -1 is our error value
@@ -148,8 +155,9 @@
 		AddOverlays("[icon_state]_panel")
 
 /obj/machinery/telecomms/process()
-	update_icon()
-	if(!use_power) return PROCESS_KILL
+	if(!use_power)
+		update_icon()
+		return PROCESS_KILL
 	if(!operable(EMPED))
 		toggle_power(additional_flags = EMPED)
 		return PROCESS_KILL
@@ -167,24 +175,28 @@
 	. = ..()
 	if(use_power)
 		START_PROCESSING_MACHINE(src, MACHINERY_PROCESS_SELF)
+		if (produces_sound && telecomms_looping_sound == null)
+			telecomms_looping_sound = new soundloop(src, TRUE)
 	else
 		STOP_PROCESSING_MACHINE(src, MACHINERY_PROCESS_SELF)
+		if (telecomms_looping_sound)
+			telecomms_looping_sound.stop()
+			QDEL_NULL(telecomms_looping_sound)
 
-/obj/machinery/telecomms/emp_act(severity)
-	. = ..()
+/**
+ * Previous implementation was to run EMP proc then restore, but was very buggy. This is a rudimentary alternate implementation, just flags processors to crap out.
+ */
+/obj/machinery/telecomms/proc/ion_storm()
+	var/duration = 270 + rand(1,60)
+	ion_storm = TRUE
+	addtimer(CALLBACK(src, PROC_REF(post_ion_storm_act)), duration SECONDS)
 
-	if(stat & EMPED || !prob(100/severity))
-		return
+/obj/machinery/telecomms/proc/post_ion_storm_act()
+	ion_storm = FALSE
 
-	stat |= EMPED
-	addtimer(CALLBACK(src, PROC_REF(post_emp_act)), (300 SECONDS) / severity)
-
-/obj/machinery/telecomms/proc/emp_damage()
+/obj/machinery/telecomms/proc/ion_storm_damage()
 	integrity = between(0, integrity - (rand(5,15)), 100)
 
-/obj/machinery/telecomms/proc/post_emp_act()
-	stat &= ~EMPED
-	toggle_power(POWER_USE_IDLE)
 
 /obj/machinery/telecomms/proc/check_heat()
 	// Checks heat from the environment and applies any integrity damage
@@ -288,8 +300,8 @@
 	return signal && (!freq_listening.len || (signal.frequency in freq_listening))
 
 /*
- *	Reception range of telecomms machines is limited via overmap_range
- *	Returns distance, not a boolean value, so don't do !get_reception or so help me god
+ * Reception range of telecomms machines is limited via overmap_range
+ * Returns distance, not a boolean value, so don't do !get_reception or so help me god
  */
 /obj/machinery/telecomms/proc/get_signal_dist(datum/signal/subspace/signal)
 	if(!SSatlas.current_map.use_overmap || !istype(linked) || !istype(signal.sector))

@@ -24,11 +24,19 @@
 #define POWER_USE_ACTIVE    2
 
 // Bitflags for machine stat variable.
+// These definitions are copypasted in the dmdocs in 'code/game/machinery.dm' so they can be easily referenced by checking the 'stat' variable.
+// SO THAT MEANS IF YOU UPDATE THEM HERE, UPDATE THEM THERE FOR VISIBILITY!
 #define BROKEN   0x1
 #define NOPOWER  0x2
 #define POWEROFF 0x4  // TBD.
 #define MAINT    0x8  // Under maintenance.
 #define EMPED    0x10 // Temporary broken by EMP pulse.
+
+#define FABRICATOR_EXTRA_COST_FACTOR 1.25
+#define FAB_HACKED BITFLAG(1)
+#define FAB_DISABLED BITFLAG(2)
+#define FAB_SHOCKED BITFLAG(3)
+#define FAB_BUSY     BITFLAG(4)
 
 #define INOPERABLE(machine)  (machine.stat & (BROKEN|NOPOWER|MAINT|EMPED))
 #define OPERABLE(machine)    !INOPERABLE(machine)
@@ -81,7 +89,7 @@
 #define NETWORK_THIRD_DECK "Third Deck"
 #define NETWORK_INTREPID "Intrepid" // horizon shuttle, expedition/transport
 #define NETWORK_CANARY "Canary" // horizon shuttle, scout/fighter
-#define NETWORK_QUARK "Quark" // horizon shuttle, xenoarch/science
+#define NETWORK_QUARK "Quark" // horizon shuttle, xenostudies
 #define NETWORK_NEWS "News"
 #define NETWORK_CRYO_OUTPOST "#187-D Outpost"
 
@@ -104,14 +112,14 @@ GLOBAL_LIST_INIT(restricted_camera_networks, list(NETWORK_ERT,NETWORK_MERCENARY,
 #define STATUS_DISABLED 0 // RED Visability
 #define STATUS_CLOSE -1 // Close the interface
 
-/*
- *	Atmospherics Machinery.
-*/
+/**
+ * Atmospherics Machinery.
+ */
 
-///Maximum flowrate, in L/s, that the scrubbers use when siphoning. Anything higher than `CELL_VOLUME` has no effect.
+/// Maximum flowrate, in L/s, that the scrubbers use when siphoning. Anything higher than `CELL_VOLUME` has no effect.
 #define MAX_SIPHON_FLOWRATE   5000
 
-///Maximum flowrate, in L/s, that the scrubbers use when scrubbing from a turf.
+/// Maximum flowrate, in L/s, that the scrubbers use when scrubbing from a turf.
 #define MAX_SCRUBBER_FLOWRATE 400
 
 #define ATMOS_PUMP_MAX_PRESSURE 15000
