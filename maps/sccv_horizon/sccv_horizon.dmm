@@ -7390,6 +7390,10 @@
 	pixel_x = 5;
 	pixel_y = 5
 	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled/white,
 /area/horizon/security/forensic_laboratory)
 "aUW" = (
@@ -7618,6 +7622,9 @@
 /obj/effect/floor_decal/corner_wide/grey/diagonal,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
 /obj/effect/floor_decal/spline/plain/brown,
+/obj/effect/landmark/start{
+	name = "Hangar Technician"
+	},
 /turf/simulated/floor/tiled/white,
 /area/horizon/operations/break_room)
 "aWW" = (
@@ -8924,6 +8931,10 @@
 	},
 /obj/effect/floor_decal/corner/beige/full{
 	dir = 8
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/tiled,
 /area/horizon/crew/vacantoffice)
@@ -12179,6 +12190,10 @@
 /obj/item/folder/sec{
 	pixel_x = -6;
 	pixel_y = 2
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/wood,
 /area/horizon/security/meeting_room)
@@ -21262,6 +21277,10 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/carpet,
 /area/horizon/repoffice/representative_two)
 "cPb" = (
@@ -23254,6 +23273,10 @@
 	},
 /obj/item/pen{
 	pixel_y = 4
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/tiled/white,
 /area/horizon/command/heads/cmo)
@@ -29253,17 +29276,21 @@
 	pixel_x = -8;
 	pixel_y = 1
 	},
-/obj/item/folder/sec{
-	pixel_x = -8;
-	pixel_y = 1
-	},
-/obj/item/folder/sec{
-	pixel_x = -8;
-	pixel_y = 1
-	},
 /obj/item/pen/fountain/black{
 	pixel_x = 5;
 	pixel_y = 3
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
+	},
+/obj/item/folder/sec{
+	pixel_x = -8;
+	pixel_y = 1
+	},
+/obj/item/folder/sec{
+	pixel_x = -8;
+	pixel_y = 1
 	},
 /turf/simulated/floor/carpet,
 /area/horizon/security/investigators_office)
@@ -30618,6 +30645,10 @@
 	dir = 9
 	},
 /obj/machinery/alarm/west,
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled,
 /area/horizon/service/custodial)
 "dYW" = (
@@ -31101,9 +31132,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 5
-	},
-/obj/effect/landmark/start{
-	name = "Hangar Technician"
 	},
 /obj/effect/floor_decal/corner/brown,
 /turf/simulated/floor/tiled,
@@ -38228,6 +38256,10 @@
 	pixel_x = -4;
 	pixel_y = 8
 	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled,
 /area/horizon/security/custodial)
 "fan" = (
@@ -39757,6 +39789,10 @@
 	pixel_y = 3;
 	pixel_x = 5
 	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/carpet,
 /area/horizon/command/heads/om)
 "flo" = (
@@ -40778,6 +40814,10 @@
 	dir = 5;
 	id = "bridgeconf";
 	pixel_x = -3
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/carpet,
 /area/horizon/command/bridge/meeting_room)
@@ -46102,6 +46142,10 @@
 	},
 /obj/machinery/light{
 	dir = 8
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/carpet,
 /area/horizon/security/investigators_office)
@@ -54673,6 +54717,10 @@
 /obj/machinery/cell_charger,
 /obj/item/paper_scanner,
 /obj/item/paicard,
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled,
 /area/horizon/storage/primary)
 "hmK" = (
@@ -61786,6 +61834,10 @@
 	dir = 8
 	},
 /obj/structure/table/reinforced/steel,
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled/dark,
 /area/horizon/command/bridge/controlroom)
 "ijE" = (
@@ -62139,6 +62191,10 @@
 /obj/effect/floor_decal/corner/grey/diagonal,
 /obj/item/paper_bin,
 /obj/item/pen,
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled/white,
 /area/horizon/medical/reception)
 "ilr" = (
@@ -63559,6 +63615,10 @@
 	dir = 8
 	},
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled,
 /area/horizon/service/custodial/auxiliary)
 "ivn" = (
@@ -64060,6 +64120,10 @@
 	id = "consular_b_ringer";
 	req_access = null;
 	req_one_access = list(72)
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/carpet,
 /area/horizon/repoffice/consular_two)
@@ -70569,9 +70633,6 @@
 /turf/simulated/floor/tiled/dark,
 /area/horizon/security/checkpoint)
 "jsO" = (
-/obj/effect/landmark/start{
-	name = "Hangar Technician"
-	},
 /obj/effect/floor_decal/corner/brown{
 	dir = 9
 	},
@@ -73005,6 +73066,10 @@
 /obj/item/stamp/denied{
 	pixel_y = 14;
 	pixel_x = -2
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/carpet,
 /area/horizon/command/heads/xo)
@@ -76514,6 +76579,10 @@
 	},
 /obj/item/pen/black{
 	pixel_x = 7
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/tiled,
 /area/horizon/operations/machinist)
@@ -82528,11 +82597,11 @@
 /area/horizon/engineering/reactor/supermatter/waste)
 "kUB" = (
 /obj/structure/table/stone/marble,
-/obj/item/reagent_containers/food/snacks/salad/tossedsalad{
+/obj/item/reagent_containers/food/snacks/salad/applesalad{
 	pixel_x = 18;
 	pixel_y = 10
 	},
-/obj/item/reagent_containers/food/snacks/salad/tossedsalad{
+/obj/item/reagent_containers/food/snacks/salad/applesalad{
 	pixel_x = 16;
 	pixel_y = 3
 	},
@@ -87419,6 +87488,10 @@
 "lAw" = (
 /obj/structure/table/wood,
 /obj/item/taperecorder,
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/carpet,
 /area/horizon/crew/journalistoffice)
 "lAB" = (
@@ -92469,6 +92542,10 @@
 	id = "consular_a_ringer";
 	req_access = null;
 	req_one_access = list(72)
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/carpet,
 /area/horizon/repoffice/consular_one)
@@ -99720,6 +99797,10 @@
 /obj/item/destTagger{
 	pixel_x = 4;
 	pixel_y = -7
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/tiled/dark/full,
 /area/horizon/service/kitchen)
@@ -107133,12 +107214,6 @@
 	},
 /turf/simulated/floor/reinforced,
 /area/horizon/weapons/grauwolf)
-"olw" = (
-/obj/structure/bed/stool/chair{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/horizon/operations/break_room)
 "oly" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -114144,6 +114219,15 @@
 	},
 /turf/simulated/floor/tiled,
 /area/horizon/command/bridge/upperdeck)
+"pgA" = (
+/obj/structure/bed/stool/chair{
+	dir = 4
+	},
+/obj/effect/landmark/start{
+	name = "Hangar Technician"
+	},
+/turf/simulated/floor/tiled,
+/area/horizon/operations/break_room)
 "pgB" = (
 /obj/effect/floor_decal/corner/dark_green/full{
 	dir = 1
@@ -116651,15 +116735,19 @@
 /obj/item/pen{
 	pixel_x = -6
 	},
+/obj/structure/table/reinforced/steel,
+/obj/machinery/light,
+/obj/item/folder/yellow{
+	pixel_x = -5
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
+	},
 /obj/item/paper_scanner{
 	pixel_x = 9;
 	pixel_y = 3
 	},
-/obj/item/folder/yellow{
-	pixel_x = -5
-	},
-/obj/structure/table/reinforced/steel,
-/obj/machinery/light,
 /turf/simulated/floor/carpet,
 /area/horizon/command/heads/chief)
 "pyY" = (
@@ -127236,6 +127324,9 @@
 /obj/structure/bed/stool/chair{
 	dir = 8
 	},
+/obj/effect/landmark/start{
+	name = "Hangar Technician"
+	},
 /turf/simulated/floor/tiled,
 /area/horizon/operations/break_room)
 "qWr" = (
@@ -128137,19 +128228,23 @@
 	pixel_y = 5;
 	pixel_x = 6
 	},
-/obj/item/pen/black,
-/obj/item/price_scanner{
-	pixel_x = 6
-	},
 /obj/machinery/button/remote/blast_door{
 	dir = 6;
 	id = "cargo_desk";
 	pixel_x = -7;
 	pixel_y = 8
 	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
+	},
 /obj/item/folder/yellow{
 	pixel_x = 6
 	},
+/obj/item/price_scanner{
+	pixel_x = 6
+	},
+/obj/item/pen/black,
 /turf/simulated/floor/tiled,
 /area/horizon/operations/office)
 "rcp" = (
@@ -135785,6 +135880,10 @@
 	pixel_x = -4
 	},
 /obj/machinery/power/outlet,
+/obj/item/clipboard{
+	pixel_y = -2;
+	pixel_x = -6
+	},
 /turf/simulated/floor/tiled/full,
 /area/horizon/engineering/lobby)
 "sbq" = (
@@ -162116,12 +162215,6 @@
 	},
 /turf/simulated/floor/tiled/full,
 /area/horizon/storage/primary)
-"vCr" = (
-/obj/effect/landmark/start{
-	name = "Hangar Technician"
-	},
-/turf/simulated/floor/tiled,
-/area/horizon/operations/break_room)
 "vCI" = (
 /obj/structure/sign/poster{
 	pixel_y = 32
@@ -163205,6 +163298,10 @@
 	dir = 4
 	},
 /obj/machinery/firealarm/west,
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/tiled/full,
 /area/horizon/command/bridge/cciaroom)
 "vKD" = (
@@ -169373,6 +169470,10 @@
 /obj/structure/table/wood,
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = 10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/carpet,
 /area/horizon/repoffice/representative_one)
@@ -182178,6 +182279,10 @@
 /obj/effect/floor_decal/spline/fancy/wood{
 	dir = 5
 	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
+	},
 /turf/simulated/floor/wood,
 /area/horizon/command/heads/captain)
 "yja" = (
@@ -182305,10 +182410,6 @@
 	pixel_x = 5;
 	pixel_y = 9
 	},
-/obj/item/clipboard{
-	pixel_y = -2;
-	pixel_x = -6
-	},
 /obj/item/paper_bin{
 	pixel_x = 4;
 	pixel_y = 2
@@ -182316,6 +182417,10 @@
 /obj/structure/table/reinforced/steel,
 /obj/machinery/light_switch/south{
 	pixel_x = -6
+	},
+/obj/item/paper/stickynotes/pad/random{
+	pixel_x = -10;
+	pixel_y = -3
 	},
 /turf/simulated/floor/tiled,
 /area/horizon/engineering/lobby)
@@ -268033,7 +268138,7 @@ nwj
 kiJ
 nwj
 rNQ
-vCr
+uGE
 aOf
 gAJ
 uVm
@@ -268290,7 +268395,7 @@ djR
 lNh
 nwj
 fSu
-vCr
+uGE
 aOf
 gAJ
 uVm
@@ -269573,8 +269678,8 @@ jkr
 pyM
 nwj
 lhf
-olw
-olw
+pgA
+pgA
 mzm
 cGa
 mRn
