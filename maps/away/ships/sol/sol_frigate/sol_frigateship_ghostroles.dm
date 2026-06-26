@@ -1,83 +1,151 @@
-/datum/ghostspawner/human/ssrm_navy_crewman/solfrig_crewman
-	short_name = "solfrig_crewman"
+/datum/ghostspawner/human/Solfrig_crewman
+	short_name = "Solfrig_crewman"
 	name = "Solarian Frigate Crewman"
-	desc = "\
-	Crew a Solarian Naval Frigate, under the command of either the Northern or Southern Solarian Reconstruction Mandate. Serve and protect the interests of the Alliance, \
-	whever you are. (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, \
-	and Colettish accents for the North.) \
-	"
+	desc = "Crew a Solarian Naval Frigate, under the command of either the Northern or Southern Solarian Reconstruction Mandate. Serve and protect the interests of the Alliance, whever you are. (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and Colettish accents for the North.)"
+	tags = list("External")
 	mob_name_prefix = "PO3. "
 
-	spawnpoints = list("solfrig_navy_crewman")
+	spawnpoints = list("Solfrig_navy_crewman")
 	max_count = 3
 
 	outfit = /obj/outfit/admin/ssrm_navy_crewman
+	possible_species = list(SPECIES_HUMAN)
+	allow_appearance_change = APPEARANCE_PLASTICSURGERY
 
 	assigned_role = "Solarian Frigate Crewman"
 	special_role = "Solarian Frigate Crewman"
+	respawn_flag = null
 
-/datum/ghostspawner/human/ssrm_navy_crewman/solfrig_commander
-	short_name = "solfrig_commander"
+
+/obj/outfit/admin/solfrig_navy_crewman
+	name = "Solarian Frigate Crewman"
+
+	uniform = /obj/item/clothing/under/rank/sol
+	shoes = /obj/item/clothing/shoes/jackboots
+	back = /obj/item/storage/backpack/satchel
+	head = /obj/item/clothing/head/sol
+
+	id = /obj/item/card/id/ssrm_ship
+
+	l_ear = /obj/item/device/radio/headset/ship
+
+	backpack_contents = list(/obj/item/storage/box/survival = 1, /obj/item/melee/energy/sword/knife/sol = 1)
+
+/obj/outfit/admin/Solfrig_navy_crewman/get_id_access()
+	return list(ACCESS_SOL_SHIPS, ACCESS_EXTERNAL_AIRLOCKS)
+
+/datum/ghostspawner/human/ssrm_navy_officer
+	short_name = "Solfrig_Commander"
 	name = "Solarian Frigate Commander"
-	desc = "\
-	Command a Solarian Naval Frigate, under the authority of either the Northern or Southern Solarian Reconstruction Mandate. \
-	Serve and defend the interests of the Solarian Government, wherever you are assigned to. Praying for a more prestigious command is optional \
-	(NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, \
-	and San Colettish accents for the North.) \
-	"
+	desc = "Command a Solarian Naval Frigate, under the authority of either the Northern or Southern Solarian Reconstruction Mandate. Serve and defend the interests of the Solarian Government, wherever you are assigned to. Praying for a more prestigious command is optional (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and San Colettish accents for the North.) "
+	tags = list("External")
 	mob_name_prefix = "CDR. "
 
-	spawnpoints = list("solfrig_commander")
+	spawnpoints = list("Solfrig_commander")
 	max_count = 1
 
 	outfit = /obj/outfit/admin/ssrm_navy_officer
+	possible_species = list(SPECIES_HUMAN)
+	allow_appearance_change = APPEARANCE_PLASTICSURGERY
 
 	assigned_role = "Solarian Frigate Commander"
 	special_role = "Solarian Frigate Commander"
+	respawn_flag = null
 
-/datum/ghostspawner/human/ssrm_navy_crewman/solfrig_xo
-	short_name = "solfrig_xo"
+
+/obj/outfit/admin/ssrm_navy_officer
+	name = "Solarian Frigate Commander"
+
+	uniform = /obj/item/clothing/under/rank/sol/dress/officer
+	shoes = /obj/item/clothing/shoes/laceup
+	back = /obj/item/storage/backpack/satchel/leather
+	head = /obj/item/clothing/head/sol/dress/officer
+	accessory = /obj/item/clothing/accessory/sol_pin
+
+	id = /obj/item/card/id/ssrm_ship
+
+	l_ear = /obj/item/device/radio/headset/ship
+
+	backpack_contents = list(/obj/item/storage/box/survival = 1, /obj/item/melee/energy/sword/knife/sol = 1)
+
+/obj/outfit/admin/ssrm_navy_officer/get_id_access()
+	return list(ACCESS_SOL_SHIPS, ACCESS_EXTERNAL_AIRLOCKS)
+
+/datum/ghostspawner/human/Solfrig_XO
+	short_name = "Solfrig_XO"
 	name = "Solarian Frigate Lieutenant"
-	desc = "\
-	Serve as the Executive Officer aboard a Solarian Naval Frigate, under the authority of either the Northern or Southern Solarian Reconstruction Mandate. \
-	Follow the orders of your Captain, and defend the interests of the Solarian Alliance. No matter where you are. \
-	(NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and San Colettish \
-	accents for the North.) "
+	desc = "Serve as the Executive Officer aboard a Solarian Naval Frigate, under the authority of either the Northern or Southern Solarian Reconstruction Mandate. Follow the orders of your Captain, and defend the interests of the Solarian Alliance. No matter where you are. (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and San Colettish accents for the North.) "
 	mob_name_prefix = "LT. "
 
-	spawnpoints = list("solfrig_XO")
+	spawnpoints = list("Solfrig_XO")
 	max_count = 1
-
-	outfit = /obj/outfit/admin/ssrm_navy_chief_petty_officer/solfrig_xo
 
 	assigned_role = "Solarian Frigate Executive Officer"
 	special_role = "Solarian Frigate Executive Officer"
 
-/obj/outfit/admin/ssrm_navy_chief_petty_officer/solfrig_xo
+/obj/outfit/admin/Solfrig_navy_XO
 	name = "Solarian Frigate Executive Officer"
 
 	uniform = /obj/item/clothing/under/rank/sol/dress/subofficer
+	shoes = /obj/item/clothing/shoes/laceup
+	back = /obj/item/storage/backpack/satchel/leather
+	head = /obj/item/clothing/head/sol/dress
 	accessory = /obj/item/clothing/accessory/holster/thigh
+
+/datum/ghostspawner/human/ssrm_marine_pilot
+	short_name = "ssrm_marine_pilot"
+	name = "Sol Marine Recon Exosuit Pilot"
+	desc = "Serve as the Exosuit Pilot aboard an Solarian Frigate. Under the authority of either the Northern or Southern Solarian Reconstruction Mandate. Defend your ship, the honor of the corps, and the intrests of the Solarian Government. Oorah!"
+	tags = list("External")
+	mob_name_prefix = "SGT. "
+
+	spawnpoints = list("Solfrig_navy_crewman")
+	max_count = 1
+
+	outfit = /obj/outfit/admin/ssrm_marine_pilot
+	possible_species = list(SPECIES_HUMAN)
+	allow_appearance_change = APPEARANCE_PLASTICSURGERY
+
+	assigned_role = "Sol Marine Recon Exosuit Pilot"
+	special_role = "Sol Marine Recon Exosuit Pilot"
+	respawn_flag = null
+
+
+/obj/outfit/admin/ssrm_marine_pilot
+	name = "Sol Marine Recon Exosuit Pilot"
+
+	uniform = /obj/item/clothing/under/rank/sol/marine
+	shoes = /obj/item/clothing/shoes/jackboots
+	back = /obj/item/storage/backpack/satchel
+	belt = /obj/item/storage/belt/utility/full
+	head = /obj/item/clothing/head/beret/sol
 
 	id = /obj/item/card/id/ssrm_ship
 
-	l_ear = /obj/item/radio/headset/ship
+	l_ear = /obj/item/device/radio/headset/ship
 
-/obj/outfit/admin/ssrm_navy_chief_petty_officer/solfrig_xo/get_id_access()
+	backpack_contents = list(/obj/item/storage/box/survival = 1, /obj/item/melee/energy/sword/knife/sol = 1)
+
+/obj/outfit/admin/ssrm_marine_pilot/get_id_access()
 	return list(ACCESS_SOL_SHIPS, ACCESS_EXTERNAL_AIRLOCKS)
 
-/datum/ghostspawner/human/ssrm_ipc/solfrig_ipc
-	short_name = "solfrig_ipc"
-	name = "Solarian Frigate Synthetic"
-	desc = "\
-	Serve as a Navy-owned IPC aboard a Solarian Frigate. Remember that you are not a free, enlisted soldier: you are the military's non-combatant property, \
-	programmed to rigidly serve the interests of the Solarian government above all else. \
-	"
+/datum/ghostspawner/human/Solfrig_Intern
+	short_name = "Solfrig_Intern"
+	name = "Solarian Frigate Midshipman"
+	desc = "Serve as an officer-in-training aboard a Solarian Navy Frigate. Learn to lead, and not to be totally incompetent. (NOTE: It is recommended to use appropirate accents and origins depending on which region of the Spur you are in; Visegradi accents for the South, and San Colettish accents for the North.) "
+	mob_name_prefix = "MIDN. "
 
-	spawnpoints = list("solfrig_ipc")
+	spawnpoints = list("Solfrig_Intern")
 	max_count = 1
 
-	outfit = /obj/outfit/admin/ssrm_ipc
+	assigned_role = "Solarian Navy Cadet"
+	special_role = "Solarian Navy Cadet"
 
-	assigned_role = "Sol Navy Synthetic"
-	special_role = "Sol Navy Synthetic"
+/obj/outfit/admin/Solfrig_navy_intern
+	name = "Solarian Navy Cadet"
+
+	uniform = /obj/item/clothing/under/rank/sol/dress/subofficer
+	shoes = /obj/item/clothing/shoes/laceup
+	back = /obj/item/storage/backpack/satchel/leather
+	head = /obj/item/clothing/head/sol/dress
+
