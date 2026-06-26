@@ -7,9 +7,9 @@
 	obj_flags = OBJ_FLAG_ROTATABLE
 
 	use_power = POWER_USE_OFF
-	idle_power_usage = 100 //Watts, I hope.  Just enough to do the computer and display things.
+	idle_power_usage = 1000
 
-	var/max_power = 500000
+	var/max_power = 2500000
 	var/thermal_efficiency = 0.65
 
 	var/obj/machinery/atmospherics/binary/circulator/circ1
@@ -146,7 +146,7 @@
 	//Exceeding maximum power leads to some power loss
 	if(effective_gen > max_power && prob(5))
 		spark_system.queue()
-		stored_energy *= 0.5
+		stored_energy *= 0.67
 
 	//Power
 	last_circ1_gen = circ1.return_stored_energy()
@@ -163,7 +163,7 @@
 	if(genlev != lastgenlev)
 		lastgenlev = genlev
 		update_icon()
-	add_avail(effective_gen)
+	ADD_TO_POWERNET(src, effective_gen)
 
 /obj/machinery/power/generator/attack_ai(mob/user)
 	if(!ai_can_interact(user))
@@ -171,7 +171,7 @@
 	attack_hand(user)
 
 /obj/machinery/power/generator/attackby(obj/item/attacking_item, mob/user)
-	if(attacking_item.iswrench())
+	if(attacking_item.tool_behaviour == TOOL_WRENCH)
 		attacking_item.play_tool_sound(get_turf(src), 75)
 		anchored = !anchored
 		user.visible_message("[user.name] [anchored ? "secures" : "unsecures"] the bolts holding [src.name] to the floor.", \
@@ -210,9 +210,9 @@
 		data["primaryDir"] = vertical ? "top" : "left"
 		data["primaryOutput"] = last_circ1_gen/1000
 		data["primaryFlowCapacity"] = circ1.volume_capacity_used*100
-		data["primaryInletPressure"] = circ1.air1.return_pressure()
+		data["primaryInletPressure"] = XGM_PRESSURE(circ1.air1)
 		data["primaryInletTemperature"] = circ1.air1.temperature
-		data["primaryOutletPressure"] = circ1.air2.return_pressure()
+		data["primaryOutletPressure"] = XGM_PRESSURE(circ1.air2)
 		data["primaryOutletTemperature"] = circ1.air2.temperature
 
 	if(circ2)
@@ -220,9 +220,9 @@
 		data["secondaryDir"] = vertical ? "bottom" : "right"
 		data["secondaryOutput"] = last_circ2_gen/1000
 		data["secondaryFlowCapacity"] = circ2.volume_capacity_used*100
-		data["secondaryInletPressure"] = circ2.air1.return_pressure()
+		data["secondaryInletPressure"] = XGM_PRESSURE(circ2.air1)
 		data["secondaryInletTemperature"] = circ2.air1.temperature
-		data["secondaryOutletPressure"] = circ2.air2.return_pressure()
+		data["secondaryOutletPressure"] = XGM_PRESSURE(circ2.air2)
 		data["secondaryOutletTemperature"] = circ2.air2.temperature
 
 	if(circ1 && circ2)
